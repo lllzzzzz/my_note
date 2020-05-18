@@ -1,4 +1,5 @@
-# 设置签名
+# git
+## 设置签名
     项目级别/仓库级别：仅在当前本地库范围内有效
         git config user.name tom_Pro
         git config user.email goodMorning_pro@qq.com
@@ -7,8 +8,8 @@
         git config --global user.name tom_glb
         git config --global goodMorning_pro@qq.com
         信息保存位置：~/.gitconfig
-# 基本操作
-    ## 状态查看
+## 基本操作
+    状态查看
         git status
     添加
         git add [file name]
@@ -52,7 +53,7 @@
             将工作区中的文件和本地库历史记录比较
         git diff
             不带文件名比较多个文件
-# 分支管理
+## 分支管理
     分支操作
         创建分支
             git branch [分支名]
@@ -82,7 +83,7 @@
         分离HEAD
             切换换到某个历史提交点（HEAD分离状态）,在这个游离的分支上可以修改、提交、切换分支，切换之后会有如下提示：执行git branch [hash]创建一个新的分支
             git checkout [hash]
-# 标签
+## 标签
     列出标签
         git tag
         可以按照特定的模式查找标签，如下：
@@ -100,7 +101,7 @@
         git push origin [标签名]
         推送所有标签
             git push origin tags
-# 屏蔽文件
+## 屏蔽文件
     步骤
         1. 在目录下穿件.gitignore文件
         2. 在.gitignore文件中添加需要屏蔽的内容，如：
@@ -108,7 +109,7 @@
             Listings/
             Objects/
             ...
-# 创建远程仓库
+## 创建远程仓库
     创建远程库地址别名
         git remote -v 查看当前所有远程地址别名
         git remote add [别名] [远程地址]
@@ -116,4 +117,9 @@
         git push [别名][分支名]
     克隆
         git clone [远程地址]
-        
+## cherry-pick
+    将一个分支的修改合并到另一分支
+## rebase
+    改变分支依赖
+## submodule
+## subtree
